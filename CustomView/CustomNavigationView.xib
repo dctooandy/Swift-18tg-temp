@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomNavigationView" customModule="ProjectT" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GXg-ec-EEZ">
+                    <rect key="frame" x="0.0" y="54" width="375" height="2"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="Oum-lp-9BT"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4MY-jj-SPT">
+                    <rect key="frame" x="337" y="15" width="26" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="26" id="38r-oI-UZy"/>
+                        <constraint firstAttribute="height" constant="26" id="bvJ-cA-wvd"/>
+                    </constraints>
+                    <state key="normal" image="icon-headphone"/>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="previous" translatesAutoresizingMaskIntoConstraints="NO" id="BoS-fF-bai">
+                    <rect key="frame" x="12" y="18" width="14" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="54I-hy-6J3"/>
+                        <constraint firstAttribute="width" constant="14" id="V89-IG-dNd"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcf-MI-Yks">
+                    <rect key="frame" x="12" y="14" width="28" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="Me4-N5-f5p"/>
+                        <constraint firstAttribute="width" constant="28" id="mqA-YN-G75"/>
+                    </constraints>
+                    <state key="normal" title="     "/>
+                    <connections>
+                        <action selector="resetCustomNavigationContainerView" destination="-2" eventType="touchUpInside" id="K8c-Wa-OYa"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vA7-J3-zMP">
+                    <rect key="frame" x="87.5" y="12" width="200" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="TG0-cA-Fjn"/>
+                        <constraint firstAttribute="width" constant="200" id="VIV-yG-Ohu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.0022437958980000001" green="0.1424743235" blue="0.3749634624" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="vA7-J3-zMP" secondAttribute="bottom" constant="12" id="H2j-Pv-22A"/>
+                <constraint firstItem="BoS-fF-bai" firstAttribute="centerY" secondItem="qcf-MI-Yks" secondAttribute="centerY" id="Kwk-fP-2AS"/>
+                <constraint firstItem="vA7-J3-zMP" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="12" id="Thw-DD-tLn"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="4MY-jj-SPT" secondAttribute="trailing" constant="12" id="X4S-7P-avs"/>
+                <constraint firstItem="4MY-jj-SPT" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="XSx-3H-tLD"/>
+                <constraint firstItem="qcf-MI-Yks" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="cZY-R3-jBd"/>
+                <constraint firstItem="qcf-MI-Yks" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="f6g-ag-d4h"/>
+                <constraint firstItem="BoS-fF-bai" firstAttribute="leading" secondItem="qcf-MI-Yks" secondAttribute="leading" id="gUq-Uy-ZcF"/>
+                <constraint firstItem="GXg-ec-EEZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="r4a-Ys-XqT"/>
+                <constraint firstItem="vA7-J3-zMP" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="shI-VC-ZBH"/>
+                <constraint firstAttribute="trailing" secondItem="GXg-ec-EEZ" secondAttribute="trailing" id="v1q-7P-h8J"/>
+                <constraint firstItem="GXg-ec-EEZ" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="vfP-Pj-cGz"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="cnViewLeftBarButton" destination="qcf-MI-Yks" id="jWR-gh-sLd"/>
+                <outlet property="cnViewRightBarButton" destination="4MY-jj-SPT" id="ZTV-rf-5u2"/>
+                <outlet property="cnViewTitleLabel" destination="vA7-J3-zMP" id="2m1-ZQ-QxE"/>
+                <outlet property="gradientLayerView" destination="GXg-ec-EEZ" id="KAr-m3-bsh"/>
+            </connections>
+            <point key="canvasLocation" x="113" y="-20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon-headphone" width="40" height="40"/>
+        <image name="previous" width="70" height="120"/>
+    </resources>
+</document>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ModifyBaseUserInfoCell" rowHeight="707" id="Iia-MF-L2Z" customClass="ModifyBaseUserInfoTableViewCell" customModule="ProjectT" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="392" height="351"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Iia-MF-L2Z" id="nVb-Gc-EpO">
+                <rect key="frame" x="0.0" y="0.0" width="392" height="350.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="姓名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v1w-dd-b09">
+                        <rect key="frame" x="20" y="40" width="352" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="37w-dF-zqL"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="downArrow" translatesAutoresizingMaskIntoConstraints="NO" id="E26-bW-Xug">
+                        <rect key="frame" x="345" y="54" width="12" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="12" id="GgC-SY-3po"/>
+                            <constraint firstAttribute="height" constant="12" id="gAg-Ve-IjO"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="＊注意：姓名需与提款银行户名相同才能提款。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vSI-Se-jCS">
+                        <rect key="frame" x="20" y="90" width="352" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="Qe3-T9-Hi8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.98039215690000003" green="0.33333333329999998" blue="0.33333333329999998" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m8H-j4-kSh">
+                        <rect key="frame" x="20" y="160" width="352" height="42"/>
+                        <color key="backgroundColor" red="0.094117647060000004" green="0.31764705879999999" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="42" id="4ny-iR-Pob"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                        <state key="normal" title=" 提交">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <state key="disabled">
+                            <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="v1w-dd-b09" firstAttribute="top" secondItem="nVb-Gc-EpO" secondAttribute="top" constant="40" id="6eI-Us-5ol"/>
+                    <constraint firstAttribute="trailing" secondItem="m8H-j4-kSh" secondAttribute="trailing" constant="20" id="A86-Zc-169"/>
+                    <constraint firstItem="E26-bW-Xug" firstAttribute="centerY" secondItem="v1w-dd-b09" secondAttribute="centerY" id="DeW-pp-6R5"/>
+                    <constraint firstItem="vSI-Se-jCS" firstAttribute="leading" secondItem="nVb-Gc-EpO" secondAttribute="leading" constant="20" id="ESZ-8N-KfU"/>
+                    <constraint firstAttribute="trailing" secondItem="E26-bW-Xug" secondAttribute="trailing" constant="35" id="M5o-bi-wLd"/>
+                    <constraint firstAttribute="trailing" secondItem="vSI-Se-jCS" secondAttribute="trailing" constant="20" id="NkU-zR-iPA"/>
+                    <constraint firstItem="v1w-dd-b09" firstAttribute="leading" secondItem="nVb-Gc-EpO" secondAttribute="leading" constant="20" id="Zff-7g-jQa"/>
+                    <constraint firstItem="m8H-j4-kSh" firstAttribute="leading" secondItem="nVb-Gc-EpO" secondAttribute="leading" constant="20" id="bYv-he-lJa"/>
+                    <constraint firstAttribute="trailing" secondItem="v1w-dd-b09" secondAttribute="trailing" constant="20" id="pXS-eS-hiu"/>
+                    <constraint firstItem="vSI-Se-jCS" firstAttribute="top" secondItem="v1w-dd-b09" secondAttribute="bottom" constant="10" id="qKN-me-hGw"/>
+                    <constraint firstItem="m8H-j4-kSh" firstAttribute="top" secondItem="vSI-Se-jCS" secondAttribute="bottom" constant="30" id="vcU-ev-zmY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="baseInfoTextField" destination="v1w-dd-b09" id="vnW-B4-FUS"/>
+                <outlet property="downArrowImageView" destination="E26-bW-Xug" id="pPn-Qf-U9H"/>
+                <outlet property="hintLabel" destination="vSI-Se-jCS" id="NXO-Dd-qXA"/>
+                <outlet property="submitButton" destination="m8H-j4-kSh" id="Bgn-Jk-f8y"/>
+            </connections>
+            <point key="canvasLocation" x="155.19999999999999" y="222.63868065967017"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="downArrow" width="96" height="96"/>
+    </resources>
+</document>

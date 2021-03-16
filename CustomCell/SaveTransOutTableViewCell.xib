@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SaveTransOutCell" id="KGk-i7-Jjw" customClass="SaveTransOutTableViewCell" customModule="ProjectT" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ziq-4T-vWn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mg8-w5-BLd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Ziq-4T-vWn" secondAttribute="bottom" id="59f-5G-M0g"/>
+                    <constraint firstItem="Mg8-w5-BLd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="BT0-sr-c9M"/>
+                    <constraint firstItem="Mg8-w5-BLd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="FGt-96-1aV"/>
+                    <constraint firstAttribute="trailing" secondItem="Ziq-4T-vWn" secondAttribute="trailing" id="HYM-jI-8ur"/>
+                    <constraint firstItem="Ziq-4T-vWn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="K17-py-wrH"/>
+                    <constraint firstAttribute="trailing" secondItem="Mg8-w5-BLd" secondAttribute="trailing" id="KCr-ry-4BM"/>
+                    <constraint firstItem="Ziq-4T-vWn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="R1O-fP-DQe"/>
+                    <constraint firstAttribute="bottom" secondItem="Mg8-w5-BLd" secondAttribute="bottom" id="Scy-X0-6fM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="cashOutContainerView" destination="Mg8-w5-BLd" id="rwa-Wn-JIW"/>
+                <outlet property="saveMoneyContainerView" destination="Ziq-4T-vWn" id="J0w-FH-B18"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

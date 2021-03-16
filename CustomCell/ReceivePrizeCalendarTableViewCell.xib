@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReceivePrizeCalendarCell" rowHeight="260" id="KGk-i7-Jjw" customClass="ReceivePrizeCalendarTableViewCell" customModule="ProjectT" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="260"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="259.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rip-Nd-zFN">
+                        <rect key="frame" x="0.0" y="100" width="375" height="159.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="159.5" id="LnY-Qz-bwr"/>
+                        </constraints>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NJ6-J5-34Z">
+                        <rect key="frame" x="10" y="0.0" width="355" height="248"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAg-XF-czf">
+                                <rect key="frame" x="0.0" y="0.0" width="355" height="100"/>
+                                <color key="backgroundColor" red="0.90196078431372551" green="0.96970480680465698" blue="0.99979525804519653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="7bs-eI-VCb"/>
+                                </constraints>
+                                <string key="text">1.返水不限平台，最低金额为1元。
+2.每天05点后返水红利将自动更新，请会员当天23:59分前申请。</string>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <color key="textColor" red="0.11585504561662674" green="0.46187193355252665" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T0M-1j-fmu">
+                                <rect key="frame" x="0.0" y="100" width="355" height="15"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="8CI-6H-44k"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="全部" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c10-Rn-HBl">
+                                <rect key="frame" x="10" y="115" width="35" height="48"/>
+                                <color key="backgroundColor" red="0.0085417963564395905" green="0.31458893418312073" blue="0.7025226354598999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="A06-Om-FDL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gGk-wE-z4W">
+                                <rect key="frame" x="0.0" y="163" width="355" height="15"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="EBt-co-WHh"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="obg-RS-BCR">
+                                <rect key="frame" x="0.0" y="178" width="355" height="70"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendarIcon" translatesAutoresizingMaskIntoConstraints="NO" id="NaL-JG-Kev">
+                                        <rect key="frame" x="37" y="20" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Q1x-r3-vcc"/>
+                                            <constraint firstAttribute="width" constant="30" id="raM-zp-FKH"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2019-02-03  至 2019-03-05" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="021-n2-7FB">
+                                        <rect key="frame" x="75" y="24.5" width="232" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" red="0.0085417963564395905" green="0.31458893418312073" blue="0.7025226354598999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="NaL-JG-Kev" firstAttribute="centerY" secondItem="obg-RS-BCR" secondAttribute="centerY" id="R3m-Lt-B6o"/>
+                                    <constraint firstItem="021-n2-7FB" firstAttribute="centerX" secondItem="obg-RS-BCR" secondAttribute="centerX" constant="13.5" id="Rpm-wS-OPP"/>
+                                    <constraint firstItem="021-n2-7FB" firstAttribute="leading" secondItem="NaL-JG-Kev" secondAttribute="trailing" constant="8" id="c1c-lM-uX8"/>
+                                    <constraint firstAttribute="height" constant="70" id="gz4-Ut-rNa"/>
+                                    <constraint firstItem="021-n2-7FB" firstAttribute="centerY" secondItem="obg-RS-BCR" secondAttribute="centerY" id="vB4-9I-J3w"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="c10-Rn-HBl" firstAttribute="leading" secondItem="NJ6-J5-34Z" secondAttribute="leading" constant="10" id="E39-v4-Ysu"/>
+                            <constraint firstAttribute="trailing" secondItem="c10-Rn-HBl" secondAttribute="trailing" constant="10" id="IQp-Yu-1RZ"/>
+                            <constraint firstAttribute="trailing" secondItem="obg-RS-BCR" secondAttribute="trailing" id="Vud-V0-aOO"/>
+                            <constraint firstItem="obg-RS-BCR" firstAttribute="leading" secondItem="NJ6-J5-34Z" secondAttribute="leading" id="xoA-nI-7XT"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" red="0.90065342189999997" green="0.96970480680000004" blue="0.99979525800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="NJ6-J5-34Z" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="KPx-lC-xVb"/>
+                    <constraint firstAttribute="trailing" secondItem="rip-Nd-zFN" secondAttribute="trailing" id="PjD-hk-d7X"/>
+                    <constraint firstItem="NJ6-J5-34Z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="RAa-xb-TGI"/>
+                    <constraint firstAttribute="trailing" secondItem="NJ6-J5-34Z" secondAttribute="trailing" constant="10" id="U3z-Ta-p6I"/>
+                    <constraint firstItem="rip-Nd-zFN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="jKb-at-AnN"/>
+                    <constraint firstAttribute="bottom" secondItem="rip-Nd-zFN" secondAttribute="bottom" id="vje-ad-50B"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dateDiscriptionLabel" destination="021-n2-7FB" id="dDo-Pg-qlh"/>
+                <outlet property="dateDiscriptionView" destination="obg-RS-BCR" id="YKV-Oi-Ou1"/>
+                <outlet property="downWhiteView" destination="gGk-wE-z4W" id="FYH-6s-LNA"/>
+                <outlet property="returnWaterAndRescueSelectedLabel" destination="c10-Rn-HBl" id="Nob-IB-l4m"/>
+                <outlet property="returnWaterDiscriptionLabel" destination="mAg-XF-czf" id="B90-En-WjN"/>
+                <outlet property="upWhiteView" destination="T0M-1j-fmu" id="TnN-Bm-Occ"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="calendarIcon" width="225" height="225"/>
+    </resources>
+</document>
